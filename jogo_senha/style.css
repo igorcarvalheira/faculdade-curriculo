@@ -34,6 +34,10 @@ body {
     100% { background-position: 0% 0%; }
 }
 
+.dark-mode h1,.dark-mode h2 {
+    color:#5A6A85;
+}
+
 .logo {
     position: absolute;
     top: 0;
@@ -43,6 +47,7 @@ body {
 }
 
 h1, h2 {
+    color: #FFD369;
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
