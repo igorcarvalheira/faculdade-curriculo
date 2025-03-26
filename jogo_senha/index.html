@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Senha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/Icon.ico" type="image/x-icon">
+</head>
+<body>
+    <a href="../index.html">
+        <img src="../assets/Design_sem_nome__6_-removebg-preview.png" alt="Logo" class="logo">
+    </a>
+    
+    <audio id="musica" autoplay loop>
+        <source src="../assets/Animal Crossing City Folk OST： Able Sisters.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        document.getElementById("musica").volume = 0.04;
+    </script>
+
+    <div class="toggle-container">
+        <span>🌙</span>
+        <label class="switch">
+            <input type="checkbox" id="toggleTheme">
+            <span class="slider round"></span>
+        </label>
+        <span>🌞</span>
+    </div>
+
+    <script>
+        const toggleTheme = document.getElementById("toggleTheme");
+        const body = document.body;
+
+        if (localStorage.getItem("darkMode") === "ativado") {
+            body.classList.add("dark-mode");
+            toggleTheme.checked = true;
+        }
+
+        toggleTheme.addEventListener("change", () => {
+            if (toggleTheme.checked) {
+                body.classList.add("dark-mode");
+                localStorage.setItem("darkMode", "ativado");
+            } else {
+                body.classList.remove("dark-mode");
+                localStorage.setItem("darkMode", "desativado");
+            }
+        });
+    </script>
+</body>
+</html>

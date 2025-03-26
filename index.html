@@ -1,0 +1,114 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/Icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Igor Carvalheira</h1>
+        <p>Estudante Universitário</p>
+        <img src="./assets/Screenshot_3.png" alt="Minha Foto" class="foto-perfil">
+        <img src="./assets/Design_sem_nome__6_-removebg-preview.png" alt="Logo" class="logo-esquerda">
+        <img src="./assets/Design_sem_nome__6_-removebg-preview.png" alt="Logo" class="logo-direita">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#educacao">Educação</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#senha">Jogo da Senha</a></li>
+        </ul>
+    </nav>
+    
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Oi! Meu nome é Igor Carvalheira e atualmente sou um estudante da Universidade Católica de Pernambuco no curso de ciência da computação. Me interesso nas áreas de tecnologia da informação e tenho grande interesse na área de desenvolvimento web. No momento, estou focado em estudar HTML, CSS, JavaScript e Python.</p>
+    </section>
+    
+    <section id="experiencia">
+        <h2>Experiência</h2>
+        <p>Cursos em andamento:</p>
+        <p>Curso em vídeo - HTML5 e CSS3</p>
+        <p>Curso em vídeo - Python 3</p>
+    </section>
+    
+    <section id="educacao">
+        <h2>Educação</h2>
+        <p>Estou no quinto período do curso de ciência da computação na Universidade Católica de Pernambuco (UNICAP)</p>
+    </section>
+    
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>Ferramentas que já utilizei ou estou em processo de aprendizado: HMTL, CSS, JavaScript e Python.</p>
+    </section>
+    
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <h3>Projeto de Robótica Inclusiva</h3>
+        <p>O projeto desenvolve um sistema de alerta visual para motoristas surdos, detectando 
+            buzinas e sirenes e convertendo esses sons em sinais luminosos.</p>
+            <p><u><strong>Tecnologias Utilizadas:</strong></u></p>
+            <p><strong>Hardware:</strong> Arduino Uno, sensores de som, LED. </p>
+            <p><strong>Software:</strong> Arduino IDE, VS Code, Python (com numpy, matplotlib, pyserial). </p>
+            <p><strong>Técnicas:</strong> Transformada Rápida de Fourier (FFT) para análise de frequência e 
+                média móvel para filtragem dos dados.</p>
+        <h3>Tabelas para Organização Financeira</h3>
+        <p>Desenvolvimento de uma tabela no Excel para auxiliar na organização financeira da 
+            Biblioteca Comunitária Caranguejo Tabaiares, facilitando o controle de receitas, despesas e 
+            saldo disponível.</p>
+            <p><u><strong>Tecnologias Utilizadas:</strong></u></p>
+            <p><strong>Software:</strong> Google Sheets/Excel</p>
+            <p><strong>Ferramentas:</strong> Fórmulas para cálculos automáticos e tabelas dinâmicas para análise 
+                de dados.</p>
+    </section>
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: igorjapiassu@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/igor-carvalheira-228636332/" target="_blank">Meu Perfil</a></p>
+    </section>
+
+    <section id="senha">
+        <li><a href="./jogo_senha/">Jogo da Senha</a></li>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Igor Carvalheira. Todos os direitos reservados.</p>
+        <div class="toggle-container">
+            <span>🌙</span>
+            <label class="switch">
+                <input type="checkbox" id="toggleTheme">
+                <span class="slider round"></span>
+            </label>
+            <span>🌞</span>
+        </div>
+    </footer>
+    
+    <script>
+        const toggleTheme = document.getElementById("toggleTheme");
+        const body = document.body;
+
+        if (localStorage.getItem("darkMode") === "ativado") {
+            body.classList.add("dark-mode");
+            toggleTheme.checked = true;
+        }
+
+        toggleTheme.addEventListener("change", () => {
+            if (toggleTheme.checked) {
+                body.classList.add("dark-mode");
+                localStorage.setItem("darkMode", "ativado");
+            } else {
+                body.classList.remove("dark-mode");
+                localStorage.setItem("darkMode", "desativado");
+            }
+        });
+    </script>
+</body>
+</html>
