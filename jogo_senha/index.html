@@ -19,6 +19,18 @@
         document.getElementById("musica").volume = 0.04;
     </script>
 
+    <div class="jogo-senha">
+        <h1>Jogo da Senha</h1>
+        <p>O Jogo da Senha é um desafio de lógica e dedução onde você precisa descobrir uma sequência secreta de 4 números únicos. A cada tentativa, o jogo informa quantos números estão corretos e na posição certa. Seu objetivo é encontrar a sequência exata no menor número de tentativas possível.</p>
+        <button id="mostrarSenha">Mostrar Senha</button>
+        <input type="text" id="inputPalpite" maxlength="4" placeholder="Digite 4 dígitos">
+        <button id="enviarPalpite">Tentar</button>
+        <h2>Tentativas:</h2>
+        <ul id="listaTentativas"></ul>
+    </div>
+
+<script src="script.js"></script>
+
     <div class="toggle-container">
         <span>🌙</span>
         <label class="switch">
