@@ -27,6 +27,10 @@ header {
     margin-top: 20px;
 }
 
+h1 {
+    color: #FFD369;
+}
+
 .foto-perfil {
     border-radius: 50%;
     width: 150px;
@@ -64,6 +68,7 @@ section {
 }
 
 h2 {
+    color: #FFD369;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -141,6 +146,14 @@ a:hover {
     0% { background-position: 0% 0%; }
     50% { background-position: 100% 100%; }
     100% { background-position: 0% 0%; }
+}
+
+.dark-mode h1 {
+    color: #5A6A85;
+}
+
+.dark-mode h2 {
+    color: #5A6A85;
 }
 
 .dark-mode a {
