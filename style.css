@@ -61,7 +61,13 @@ h1 {
 }
 
 .destaque {
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
     color: #FFD369;
+}
+
+.dark-mode .destaque {
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #5A6A85;
 }
 
 section {
