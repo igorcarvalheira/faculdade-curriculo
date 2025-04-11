@@ -15,4 +15,6 @@ Listagem de habilidades
 
 Sessão de formação acadêmica
 
+Galeria de projetos desenvolvidos
+
 Jogo da senha
